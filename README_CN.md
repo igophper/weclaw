@@ -38,26 +38,9 @@ docker run -it -v ~/.weclaw:/root/.weclaw ghcr.io/fastclaw-ai/weclaw start
 
 ## 架构
 
-```
-微信用户
-    │
-    ▼
-iLink API (长轮询)
-    │
-    ▼
-┌─────────────────────────────────┐
-│           WeClaw                │
-│                                 │
-│  Monitor ──► Handler ──► Agent  │
-│                │                │
-│                ▼                │
-│             Sender              │
-└─────────────────────────────────┘
-    │                         │
-    ▼                         ▼
-微信回复               AI Agent 进程
-                      (ACP / CLI / HTTP)
-```
+<p align="center">
+  <img src="previews/architecture.png" width="600" />
+</p>
 
 **Agent 接入模式：**
 

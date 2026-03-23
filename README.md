@@ -38,26 +38,9 @@ docker run -it -v ~/.weclaw:/root/.weclaw ghcr.io/fastclaw-ai/weclaw start
 
 ## How It Works
 
-```
-WeChat User
-    │
-    ▼
-iLink API (long-poll)
-    │
-    ▼
-┌─────────────────────────────────┐
-│           WeClaw                │
-│                                 │
-│  Monitor ──► Handler ──► Agent  │
-│                │                │
-│                ▼                │
-│             Sender              │
-└─────────────────────────────────┘
-    │                         │
-    ▼                         ▼
-WeChat Reply            AI Agent Process
-                        (ACP / CLI / HTTP)
-```
+<p align="center">
+  <img src="previews/architecture.png" width="600" />
+</p>
 
 **Agent modes:**
 
